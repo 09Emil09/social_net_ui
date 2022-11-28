@@ -1,0 +1,60 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+.profileGalary {
+    width: 100%;
+    margin-top: 80px;
+    height: 570px;
+
+}
+
+.slide img {
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px rgba(52, 91, 150, 0.2);
+}
+
+.slide {
+    transform: scale(0.9);
+    transition: transform 300ms;
+    opacity: 1;
+}
+
+.activeSlide img {
+    border-radius: 0px ;
+    box-shadow: none;
+}
+
+.activeSlide {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.arrow {
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 10px;
+}
+
+.arrow svg {
+    transition: color 300ms;
+}
+
+.arrow svg:hover {
+    color: #06357B;
+}
+
+.next {
+    right: 0%;
+    top: 50%;
+    margin-right: 20px;
+}
+
+.prev {
+    left: 0%;
+    top: 50%;
+    margin-left: 20px;
+}
